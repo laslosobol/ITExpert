@@ -8,10 +8,10 @@ namespace ITExpert.BLL.Services;
 
 public class CategoryService : ICategoryService
 {
-    private IUnitOfWork _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private CategoryMapper _categoryMapper;
 
-    public CategoryMapper CategoryMapper => _categoryMapper ?? new CategoryMapper();
+    private CategoryMapper CategoryMapper => _categoryMapper ??= new CategoryMapper();
 
     public CategoryService(IUnitOfWork unitOfWork)
     {
@@ -23,7 +23,7 @@ public class CategoryService : ICategoryService
         return CategoryMapper.Map(entity);
     }
 
-    public async Task<IEnumerable<CategoryDto>> GetAllCategoriesAsync()
+    public async Task<IReadOnlyCollection<CategoryDto>> GetAllCategoriesAsync()
     {
         var entities = await _unitOfWork.CategoryRepository.GetAllAsync();
         return entities.Select(_ => CategoryMapper.Map(_)).ToList();
@@ -56,7 +56,7 @@ public class CategoryService : ICategoryService
         await _unitOfWork.CommitAsync();
     }
 
-    public async Task<IEnumerable<CategorySummary>> GetCategoriesSummary()
+    public async Task<IReadOnlyCollection<CategorySummary>> GetCategoriesSummary()
     {
         var entities = (await _unitOfWork.CategoryRepository.GetAllAsync()).ToList();
         var filmCategory = (await _unitOfWork.FilmCategoryRepository.GetAllAsync()).ToList();

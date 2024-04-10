@@ -21,7 +21,7 @@ public class GenericRepository<T> : IRepository<T> where T : class
         return await _dbSet.FindAsync(id);
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> filter = null,
+    public async Task<ICollection<T>> GetAllAsync(Expression<Func<T, bool>> filter = null,
         Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
         string[] includeProperties = null,
         int? pageNumber = null, int? pageSize = null)

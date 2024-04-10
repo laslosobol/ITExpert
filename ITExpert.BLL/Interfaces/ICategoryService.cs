@@ -6,9 +6,9 @@ namespace ITExpert.BLL.Interfaces;
 public interface ICategoryService
 {
     Task<CategoryDto> GetCategoryByIdAsync(int id);
-    Task<IEnumerable<CategoryDto>> GetAllCategoriesAsync();
+    Task<IReadOnlyCollection<CategoryDto>> GetAllCategoriesAsync();
     Task UpdateCategoryAsync(CategoryDto dto);
     Task DeleteCategoryAsync(int id);
     Task AddCategoryAsync(CategoryDto dto);
-    Task<IEnumerable<CategorySummary>> GetCategoriesSummary();
+    Task<IReadOnlyCollection<CategorySummary>> GetCategoriesSummary();
 }

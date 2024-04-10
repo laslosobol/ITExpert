@@ -8,12 +8,12 @@ namespace ITExpert.BLL.Services;
 
 public class FilmService : IFilmService
 {
-    private IUnitOfWork _unitOfWork;
+    private readonly IUnitOfWork _unitOfWork;
     private FilmMapper _filmMapper;
     private CategoryMapper _categoryMapper;
 
-    public FilmMapper FilmMapper => _filmMapper ?? new FilmMapper();
-    public CategoryMapper CategoryMapper => _categoryMapper ?? new CategoryMapper();
+    private FilmMapper FilmMapper => _filmMapper ??= new FilmMapper();
+    private CategoryMapper CategoryMapper => _categoryMapper ??= new CategoryMapper();
 
     public FilmService(IUnitOfWork unitOfWork)
     {
@@ -25,7 +25,7 @@ public class FilmService : IFilmService
         return FilmMapper.Map(entity);
     }
 
-    public async Task<IEnumerable<FilmDto>> GetAllFilmsAsync()
+    public async Task<IReadOnlyCollection<FilmDto>> GetAllFilmsAsync()
     {
         var entities = await _unitOfWork.FilmRepository.GetAllAsync();
         return entities.Select(_ => FilmMapper.Map(_)).ToList();
@@ -58,7 +58,7 @@ public class FilmService : IFilmService
         await _unitOfWork.CommitAsync();
     }
 
-    public async Task<IEnumerable<FilmSummary>> GetFilmsByFilter(FilmFilter filter)
+    public async Task<IReadOnlyCollection<FilmSummary>> GetFilmsByFilter(FilmFilter filter)
     {
 
         var entities = (await _unitOfWork.FilmRepository.GetAllAsync()).ToList();
@@ -100,7 +100,7 @@ public class FilmService : IFilmService
             result.Add(toAdd);
 
         }
-
+        
         return result;
     }
 }

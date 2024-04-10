@@ -39,8 +39,6 @@ public class CategoryController : Controller
         if (ModelState.IsValid)
         {
             var categoryDto = new CategoryDto() { Name = model.Name, ParentCategoryId = model.ParentCategoryId };
-            // if (!(await ValidateCategory(categoryDto)))
-            //     return StatusCode(StatusCodes.Status304NotModified);
             await _categoryService.AddCategoryAsync(categoryDto);
             return RedirectToAction("All");
         }
@@ -53,8 +51,6 @@ public class CategoryController : Controller
     {
         if (ModelState.IsValid)
         {
-            // if (!(await ValidateCategory(model)))
-            //     return StatusCode(StatusCodes.Status304NotModified);
             await _categoryService.UpdateCategoryAsync(model);
             return RedirectToAction("All");
         }
@@ -68,15 +64,4 @@ public class CategoryController : Controller
         await _categoryService.DeleteCategoryAsync(id);
         return RedirectToAction("All");
     }
-
-    // private async Task<bool> ValidateCategory(CategoryDto dto)
-    // {
-    //     if (dto.ParentCategoryId is not null && dto.ParentCategoryId != 0)
-    //     {
-    //         var categories = (await _categoryService.GetAllCategoriesAsync()).ToList();
-    //         var children = categories.Where(_ => _.ParentCategoryId == dto.Id);
-    //         
-    //     }
-    //     return true;
-    // }
 }

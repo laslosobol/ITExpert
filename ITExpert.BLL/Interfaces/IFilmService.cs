@@ -6,10 +6,9 @@ namespace ITExpert.BLL.Interfaces;
 public interface IFilmService
 {
     Task<FilmDto> GetFilmByIdAsync(int id);
-    Task<IEnumerable<FilmDto>> GetAllFilmsAsync();
+    Task<IReadOnlyCollection<FilmDto>> GetAllFilmsAsync();
     Task UpdateFilmAsync(FilmDto dto);
     Task DeleteFilmAsync(int id);
     Task AddFilmAsync(FilmDto dto);
-    Task<IEnumerable<FilmSummary>> GetFilmsByFilter(FilmFilter filter);
-    
+    Task<IReadOnlyCollection<FilmSummary>> GetFilmsByFilter(FilmFilter filter);
 }
