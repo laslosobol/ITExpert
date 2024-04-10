@@ -1,0 +1,15 @@
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\bin\Debug\net8.0\ITExpert.BLL.deps.json
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\bin\Debug\net8.0\ITExpert.BLL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\bin\Debug\net8.0\ITExpert.BLL.pdb
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\bin\Debug\net8.0\ITExperts.DAL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\bin\Debug\net8.0\ITExperts.DAL.pdb
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.csproj.AssemblyReference.cache
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.AssemblyInfoInputs.cache
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.AssemblyInfo.cs
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.csproj.CoreCompileInputs.cache
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.csproj.CopyComplete
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\refint\ITExpert.BLL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.pdb
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ref\ITExpert.BLL.dll

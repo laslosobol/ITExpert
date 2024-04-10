@@ -1,0 +1,12 @@
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\bin\Debug\net8.0\ITExperts.DAL.deps.json
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\bin\Debug\net8.0\ITExperts.DAL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\bin\Debug\net8.0\ITExperts.DAL.pdb
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.csproj.AssemblyReference.cache
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.AssemblyInfoInputs.cache
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.AssemblyInfo.cs
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.csproj.CoreCompileInputs.cache
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\refint\ITExperts.DAL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.pdb
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ref\ITExperts.DAL.dll

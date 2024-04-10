@@ -1,0 +1,27 @@
+@model ITExpert.BLL.DTO.FilmDto
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>@Model.Name</h2>
+
+<form asp-action="Edit" asp-controller="Film">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name</label>
+        <input type="text" asp-for="Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Director" class="control-label">Director</label>
+        <input type="text" asp-for="Director" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="ReleaseDate" class="control-label">Release Date</label>
+        <input type="datetime-local" asp-for="ReleaseDate" class="form-control"/>
+    </div>    
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-outline-secondary"/>
+    </div>
+</form>

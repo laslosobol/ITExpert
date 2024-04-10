@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITExperts.DAL", "ITExperts.DAL\ITExperts.DAL.csproj", "{136F5DFB-5D55-4327-9DB0-1610B08BB9AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITExpert.BLL", "ITExpert.BLL\ITExpert.BLL.csproj", "{80CD2383-7ABD-43B1-8C2A-FF1A94BA0F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITExpert.PL", "ITExpert.PL\ITExpert.PL.csproj", "{9209ECBD-47FA-4FFC-B479-1CA194F754F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136F5DFB-5D55-4327-9DB0-1610B08BB9AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136F5DFB-5D55-4327-9DB0-1610B08BB9AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136F5DFB-5D55-4327-9DB0-1610B08BB9AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136F5DFB-5D55-4327-9DB0-1610B08BB9AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80CD2383-7ABD-43B1-8C2A-FF1A94BA0F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CD2383-7ABD-43B1-8C2A-FF1A94BA0F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80CD2383-7ABD-43B1-8C2A-FF1A94BA0F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80CD2383-7ABD-43B1-8C2A-FF1A94BA0F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
