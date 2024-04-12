@@ -31,6 +31,10 @@ public class CategoryService : ICategoryService
 
     public async Task UpdateCategoryAsync(CategoryDto dto)
     {
+        if (await IsDescendant(dto.Id, dto.ParentCategoryId))
+        {
+            throw new InvalidOperationException("Circular dependency detected.");
+        }
         var entity = CategoryMapper.Map(dto);
         _unitOfWork.CategoryRepository.Update(entity);
         
@@ -85,5 +89,20 @@ public class CategoryService : ICategoryService
         }
 
         return result;
+    }
+    private async Task<bool> IsDescendant(int categoryId, int? potentialParentId)
+    {
+        if (categoryId == potentialParentId)
+        {
+            return true;
+        }
+
+        var category = await _unitOfWork.CategoryRepository.GetByIdWithoutTrackingAsync(categoryId);
+        if (category?.ParentCategoryId == null)
+        {
+            return false;
+        }
+
+        return await IsDescendant(category.ParentCategoryId.Value, potentialParentId);
     }
 }

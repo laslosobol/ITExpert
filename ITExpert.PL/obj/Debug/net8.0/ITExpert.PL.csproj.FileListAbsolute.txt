@@ -39,3 +39,10 @@ C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\obj\Debug\net8.0\refint\ITExpe
 C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\obj\Debug\net8.0\ITExpert.PL.pdb
 C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\obj\Debug\net8.0\ITExpert.PL.genruntimeconfig.cache
 C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\obj\Debug\net8.0\ref\ITExpert.PL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\obj\Debug\net8.0\ITExpert.PL.sourcelink.json
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.PL\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

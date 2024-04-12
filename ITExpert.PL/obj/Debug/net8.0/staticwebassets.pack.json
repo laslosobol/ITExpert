@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\sobol\\RiderProjects\\ITExpert\\ITExpert.PL\\wwwroot\\js\\film-categories.js",
+      "PackagePath": "staticwebassets\\js\\film-categories.js"
+    },
+    {
       "Id": "C:\\Users\\sobol\\RiderProjects\\ITExpert\\ITExpert.PL\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

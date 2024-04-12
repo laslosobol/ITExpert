@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITExpert.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1432dd4884b61171570f84851f09db7459b8ab27")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITExpert.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITExpert.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

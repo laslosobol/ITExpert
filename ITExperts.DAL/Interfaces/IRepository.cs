@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using ITExperts.DAL.Entities;
 
 namespace ITExperts.DAL.Interfaces;
 
@@ -13,5 +14,6 @@ public interface IRepository<T> where T : class
     Task InsertAsync(T entity);
 
     void Delete(T entity);
-    void Update(T entity); 
+    void Update(T entity);
+    Task<Category> GetByIdWithoutTrackingAsync(int id);
 }

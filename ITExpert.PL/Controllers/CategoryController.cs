@@ -15,13 +15,12 @@ public class CategoryController : Controller
     }
     
     [HttpGet]
-    public async Task<IActionResult> Index(int id) => View(await _categoryService.GetCategoryByIdAsync(id));
-    
-    [HttpGet]
     public async Task<IActionResult> All() => View(await _categoryService.GetCategoriesSummary());
+    [HttpGet]
+    public async Task<IEnumerable<CategoryDto>> List() => await _categoryService.GetAllCategoriesAsync();
 
     [HttpGet]
-    public IActionResult Create() => View();
+    public IActionResult Create() => View(new CreateCategoryViewModel());
 
     [HttpGet]
     public async Task<IActionResult> Edit(int id)
@@ -29,8 +28,13 @@ public class CategoryController : Controller
         var category = await _categoryService.GetCategoryByIdAsync(id);
         if (category is null)
             return NotFound();
-
-        return View(category);
+        var result = new CreateCategoryViewModel()
+        {
+            Id = category.Id,
+            Name = category.Name,
+            ParentCategoryId = category.ParentCategoryId
+        };
+        return View(result);
     }
 
     [HttpPost]
@@ -47,11 +51,16 @@ public class CategoryController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Edit(CategoryDto model)
+    public async Task<IActionResult> Edit(CreateCategoryViewModel model)
     {
         if (ModelState.IsValid)
         {
-            await _categoryService.UpdateCategoryAsync(model);
+            await _categoryService.UpdateCategoryAsync(new CategoryDto()
+            {
+                Id = (int)model.Id!,
+                Name = model.Name,
+                ParentCategoryId = model.ParentCategoryId
+            });
             return RedirectToAction("All");
         }
 

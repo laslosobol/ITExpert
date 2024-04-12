@@ -8,17 +8,16 @@ namespace ITExpert.PL.Controllers;
 
 public class FilmController : Controller
 {
-    private ICategoryService _categoryService;
-    private IFilmService _filmService;
+    private readonly ICategoryService _categoryService;
+    private readonly IFilmService _filmService;
+    private readonly IFilmCategoryService _filmCategoryService;
 
-    public FilmController(IFilmService filmService, ICategoryService categoryService)
+    public FilmController(IFilmService filmService, ICategoryService categoryService, IFilmCategoryService filmCategoryService)
     {
         _filmService = filmService;
         _categoryService = categoryService;
+        _filmCategoryService = filmCategoryService;
     }
-    
-    [HttpGet]
-    public async Task<IActionResult> Index(int id) => View(await _filmService.GetFilmByIdAsync(id));
 
     [HttpGet]
     public async Task<IActionResult> All(FilmFilter filter = null)
@@ -35,7 +34,7 @@ public class FilmController : Controller
     }
     
     [HttpGet]
-    public IActionResult Create() => View();
+    public IActionResult Create() => View(new CreateFilmViewModel());
 
     [HttpGet]
     public async Task<IActionResult> Edit(int id)
@@ -44,7 +43,14 @@ public class FilmController : Controller
         if (film is null)
             return NotFound();
 
-        return View(film);
+        var categories = await _filmService.GetFilmCategoriesAsync(film.Id);
+        var result = new EditFilmModel()
+        {
+            Film = film,
+            Categories = categories.ToList()
+        };
+        
+        return View(result);
     }
 
     [HttpPost]
@@ -61,12 +67,32 @@ public class FilmController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Edit(FilmDto model)
+    public async Task<IActionResult> Edit(EditFilmModel model)
     {
         if (ModelState.IsValid)
         {
-            model.ReleaseDate = DateTime.SpecifyKind(model.ReleaseDate, DateTimeKind.Utc);
-            await _filmService.UpdateFilmAsync(model);
+            var result = new FilmDto()
+            {
+                Id = model.Film.Id,
+                Name = model.Film.Name,
+                Director = model.Film.Director,
+                ReleaseDate = model.Film.ReleaseDate
+            };
+            result.ReleaseDate = DateTime.SpecifyKind(result.ReleaseDate, DateTimeKind.Utc);
+            await _filmService.UpdateFilmAsync(result);
+            await _filmCategoryService.DeleteAllFilmCategoriesByFilmId(result.Id);
+            if (!(model?.Categories.Count > 0))
+            {
+                return RedirectToAction("All");
+            }
+            foreach (var categoryId in model.Categories)
+            {
+                await _filmCategoryService.AddAsync(new FilmCategoryDto()
+                {
+                    FilmId = result.Id,
+                    CategoryId = categoryId
+                });
+            }
             return RedirectToAction("All");
         }
 

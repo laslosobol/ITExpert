@@ -45,6 +45,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -181,6 +185,14 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [

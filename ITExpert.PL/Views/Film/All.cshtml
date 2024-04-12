@@ -29,7 +29,7 @@
         @foreach (var film in Model.Films)
         {
             <tr data-categories="@string.Join(",", film.Categories.Select(_ => _.Id))" data-release="@film.ReleaseDate.ToString("yyyy-MM-dd")">
-                <td>@film.Name</td>
+                <td><a asp-action="Edit" asp-route-id="@film.Id">@film.Name</a></td>
                 <td>@film.Director</td>
                 <td>@film.ReleaseDate.ToString("d/M/yyyy")</td>
                 <td>@string.Join(", ", film.Categories.Select(_ => _.Name))</td>

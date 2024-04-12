@@ -30,10 +30,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Category/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Film/All.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbVxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,18 +40,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Film/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Film/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sobol/RiderProjects/ITExpert/ITExpert.PL/Views/Shared/Error.cshtml]

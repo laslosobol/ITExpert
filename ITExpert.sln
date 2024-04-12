@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITExpert.BLL", "ITExpert.BL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITExpert.PL", "ITExpert.PL\ITExpert.PL.csproj", "{9209ECBD-47FA-4FFC-B479-1CA194F754F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITExpert.API", "ITExpert.API\ITExpert.API.csproj", "{8D7A8EB0-B432-4933-B48F-B7DB9CA210AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9209ECBD-47FA-4FFC-B479-1CA194F754F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7A8EB0-B432-4933-B48F-B7DB9CA210AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7A8EB0-B432-4933-B48F-B7DB9CA210AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7A8EB0-B432-4933-B48F-B7DB9CA210AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7A8EB0-B432-4933-B48F-B7DB9CA210AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -30,6 +30,12 @@ public class FilmService : IFilmService
         var entities = await _unitOfWork.FilmRepository.GetAllAsync();
         return entities.Select(_ => FilmMapper.Map(_)).ToList();
     }
+    public async Task<IEnumerable<int>> GetFilmCategoriesAsync(int id)
+    {
+        var filmCategories= (await _unitOfWork.FilmCategoryRepository.GetAllAsync()).ToList();
+        var temp = filmCategories.Where(_ => _.FilmId == id).Select(_ => _.CategoryId);
+        return temp;
+    }
 
     public async Task UpdateFilmAsync(FilmDto dto)
     {

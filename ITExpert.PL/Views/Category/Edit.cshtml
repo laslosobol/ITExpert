@@ -1,4 +1,4 @@
-@model ITExpert.BLL.DTO.CategoryDto
+@model CreateCategoryViewModel
 
 @{
     ViewBag.Title = "title";
@@ -9,6 +9,7 @@
 
 <form asp-action="Edit" asp-controller="Category">
     <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" class="form-control"/>
     <div class="form-group">
         <label asp-for="Name" class="control-label">Name</label>
         <input type="text" asp-for="Name" class="form-control"/>

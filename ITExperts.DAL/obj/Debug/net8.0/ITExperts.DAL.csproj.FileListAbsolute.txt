@@ -10,3 +10,4 @@ C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.D
 C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\refint\ITExperts.DAL.dll
 C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.pdb
 C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ref\ITExperts.DAL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExperts.DAL\obj\Debug\net8.0\ITExperts.DAL.sourcelink.json

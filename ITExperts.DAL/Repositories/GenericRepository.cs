@@ -1,5 +1,6 @@
 using System.Linq.Expressions;
 using ITExperts.DAL.Context;
+using ITExperts.DAL.Entities;
 using ITExperts.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -73,5 +74,10 @@ public class GenericRepository<T> : IRepository<T> where T : class
     {
         _dbSet.Attach(entity);
         _context.Entry(entity).State = EntityState.Modified;
+    }
+    
+    public async Task<Category> GetByIdWithoutTrackingAsync(int id)
+    {
+        return await ((_dbSet as DbSet<Category>)!).AsNoTracking().FirstOrDefaultAsync(_ => _.Id == id);
     }
 }

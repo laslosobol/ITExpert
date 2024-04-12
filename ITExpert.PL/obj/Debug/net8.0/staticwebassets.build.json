@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ox+4WtmvNdAGEfpSYXO3trjAl/55xB3jNX1JH5Y6HJ4=",
+  "Hash": "xg0jxs4f5LX5t29sLOcYQJ3LSx7uB3OVOGm2L4n938Y=",
   "Source": "ITExpert.PL",
   "BasePath": "_content/ITExpert.PL",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\sobol\\RiderProjects\\ITExpert\\ITExpert.PL\\wwwroot\\js\\film-categories.js",
+      "SourceId": "ITExpert.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sobol\\RiderProjects\\ITExpert\\ITExpert.PL\\wwwroot\\",
+      "BasePath": "_content/ITExpert.PL",
+      "RelativePath": "js/film-categories.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\film-categories.js"
     },
     {
       "Identity": "C:\\Users\\sobol\\RiderProjects\\ITExpert\\ITExpert.PL\\wwwroot\\js\\site.js",

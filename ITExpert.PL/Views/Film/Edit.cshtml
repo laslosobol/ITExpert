@@ -1,27 +1,45 @@
-@model ITExpert.BLL.DTO.FilmDto
+@model EditFilmModel
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>@Model.Name</h2>
+<h2>@Model.Film.Name</h2>
 
 <form asp-action="Edit" asp-controller="Film">
     <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="Film.Id" class="form-control"/>
     <div class="form-group">
-        <label asp-for="Name" class="control-label">Name</label>
-        <input type="text" asp-for="Name" class="form-control"/>
+        <label asp-for="Film.Name" class="control-label">Name</label>
+        <input type="text" asp-for="Film.Name" class="form-control"/>
     </div>
     <div class="form-group">
-        <label asp-for="Director" class="control-label">Director</label>
-        <input type="text" asp-for="Director" class="form-control"/>
+        <label asp-for="Film.Director" class="control-label">Director</label>
+        <input type="text" asp-for="Film.Director" class="form-control"/>
     </div>
     <div class="form-group">
-        <label asp-for="ReleaseDate" class="control-label">Release Date</label>
-        <input type="datetime-local" asp-for="ReleaseDate" class="form-control"/>
-    </div>    
+        <label asp-for="Film.ReleaseDate" class="control-label">Release Date</label>
+        <input type="datetime-local" asp-for="Film.ReleaseDate" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Categories" class="control-label">Categories</label>
+        <select id="categorySelect" asp-for="Categories" multiple class="form-control">
+        </select>
+    </div>
     <div class="form-group">
         <input type="submit" value="Save" class="btn btn-outline-secondary"/>
     </div>
 </form>
+
+@section Scripts {
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+    
+    <script src="~/js/film-categories.js"></script>
+
+    <script>
+        const filmCategories = new FilmCategories('categorySelect', '/category/list', @Html.Raw(Json.Serialize(Model.Categories)));
+    </script>
+}

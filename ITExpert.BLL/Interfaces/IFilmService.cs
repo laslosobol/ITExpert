@@ -11,4 +11,5 @@ public interface IFilmService
     Task DeleteFilmAsync(int id);
     Task AddFilmAsync(FilmDto dto);
     Task<IReadOnlyCollection<FilmSummary>> GetFilmsByFilter(FilmFilter filter);
+    public Task<IEnumerable<int>> GetFilmCategoriesAsync (int id);
 }

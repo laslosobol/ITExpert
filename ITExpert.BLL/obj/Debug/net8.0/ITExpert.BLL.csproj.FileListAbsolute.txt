@@ -13,3 +13,4 @@ C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL
 C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\refint\ITExpert.BLL.dll
 C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.pdb
 C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ref\ITExpert.BLL.dll
+C:\Users\sobol\RiderProjects\ITExpert\ITExpert.BLL\obj\Debug\net8.0\ITExpert.BLL.sourcelink.json

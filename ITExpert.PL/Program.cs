@@ -18,6 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(_ =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IFilmService, FilmService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IFilmCategoryService, FilmCategoryService>();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
@@ -38,6 +39,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Film}/{action=All}/{id?}");
 
 app.Run();
